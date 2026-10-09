@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Large datasets
+data/raw/
+data/processed/
+
+# Logs and temporary files
+*.log
+logs/
+# CI test environment
+.venv-ci/
