@@ -10,6 +10,7 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel, Field
 from typing import Literal
+from fastapi.middleware.cors import CORSMiddleware
 
 from configs.model_features import MODEL_FEATURES
 from src.inference.risk_engine import build_risk_result
@@ -43,6 +44,17 @@ app = FastAPI(
     title="Real-Time Fraud Detection API",
     description="API for fraud prediction and transaction risk scoring.",
     version="1.0.0",
+)
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
 )
 
 
