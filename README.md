@@ -22,6 +22,20 @@ The project combines a trained Random Forest model, a FastAPI inference service,
 - Automated testing and CI/CD with GitHub Actions
 - Cloud deployment for the frontend and backend
 
+
+## Dashboard Preview
+
+FraudGuard provides a web interface for analyzing transactions and viewing fraud-risk predictions.
+
+### Overview
+
+![FraudGuard Dashboard](docs/images/dashboard.png)
+
+### Transaction Analysis
+
+![FraudGuard Transaction Analysis](docs/images/dashboard1.png)
+
+**Live Demo:** https://fraudguard-dashboard-zeta.vercel.app
 ## Architecture
 
 ```text
