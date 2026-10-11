@@ -38,10 +38,6 @@ FraudGuard processes transactions through a React frontend, FastAPI backend, and
 
 ![FraudGuard Dashboard](docs/images/dashboard.png)
 
-### Transaction Analysis
-
-![FraudGuard Transaction Analysis](docs/images/dashboard1.png)
-
 **Live Demo:** https://fraudguard-dashboard-zeta.vercel.app
 ## Architecture
 
