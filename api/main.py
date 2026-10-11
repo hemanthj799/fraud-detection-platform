@@ -12,6 +12,7 @@ from pydantic import BaseModel, Field
 from typing import Literal
 from fastapi.middleware.cors import CORSMiddleware
 
+
 from configs.model_features import MODEL_FEATURES
 from src.inference.risk_engine import build_risk_result
 
@@ -50,13 +51,12 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
+        "https://fraudguard-dashboard-zeta.vercel.app",
     ],
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type", "Authorization"],
 )
-
 
 # --------------------------------------------------
 # 4. Request tracking middleware
