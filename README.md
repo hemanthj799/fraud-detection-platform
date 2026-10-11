@@ -27,6 +27,13 @@ The project combines a trained Random Forest model, a FastAPI inference service,
 
 FraudGuard provides a web interface for analyzing transactions and viewing fraud-risk predictions.
 
+
+## System Architecture
+
+FraudGuard processes transactions through a React frontend, FastAPI backend, and trained Random Forest model. The backend validates incoming requests, applies preprocessing, performs model inference, and returns a fraud-risk result.
+
+![FraudGuard System Architecture](docs/images/architecture.png)
+
 ### Overview
 
 ![FraudGuard Dashboard](docs/images/dashboard.png)
